@@ -1,0 +1,132 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header li attributes */
+li {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration-line: underline;    
+}
+
+
+/* header flexbox outer container */
+.outermost-container {
+    margin: 0;
+    padding: 0;
+    border: 3px dotted red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* header left side container */
+.name {
+    border: 2px solid blue;
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+/* header menu items */
+.menu {    
+    list-style-type: none;
+    border: 2px solid green;
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;    /* vertical alignment */
+}
+
+.subtitle {
+    border: 1px solid black;
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.sidebar {
+    border: 1px solid purple;
+    display: flex;
+    flex: 1 1 10%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+/* parent container to house the projects */
+.content {
+    border: 3px solid black;
+    display: flex;
+    flex: 1 1 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.showcase {
+    border: 2px solid fuchsia;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.showcase-heading {
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: cyan;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+#main-showcase {
+    background-image: url(../img/catherder720x341.png);
+    height: 341px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.showcase-left {
+    border: 2px solid blue;
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.showcase-right {    
+    list-style-type: none;
+    border: 2px solid green;
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.myinfo {
+    list-style-type: none;
+    border: 2px solid green;
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;    /* vertical alignment */
+}
