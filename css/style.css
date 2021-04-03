@@ -9,7 +9,7 @@ html {
 
 /* header li attributes */
 li {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 5px;
   padding: 5px;
   font-weight: bold;
@@ -18,16 +18,22 @@ li {
 
 /* header flexbox outer container */
 .outermost-container {
-  margin: 0;
-  padding: 0;
-  border: 3px dotted red;
+  margin: 0px;
+  padding: 0px;
+  /* border: 3px dotted red; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  
 }
-/* header left side container */
+
+#header-colors {
+  background-color: #11a0a8;  
+}
+
+
 .name {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex: 1 1 50%;
   flex-direction: row;
@@ -37,10 +43,15 @@ li {
   font-size: 25px;
 }
 
+h1, h2 {
+  background-color: #c1b98b;
+  padding: 5px;
+}
+
 /* header menu items */
 .menu {
   list-style-type: none;
-  border: 2px solid green;
+  /* border: 2px solid green; */ 
   display: flex;
   flex: 1 1 50%;
   flex-direction: row;
@@ -52,7 +63,7 @@ li {
 
 /* Subtitle characteristics */
 .subtitle {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex: 1 1 100%;
   flex-direction: row;
@@ -60,11 +71,16 @@ li {
   justify-content: flex-end;
   font-size: 25px;
   padding: 20px;
+  background-image: url(../img/sand-ripplescropped.jpg);
+  background-position: center;
+  background-size: cover;
+
 }
 
 /* Left sidebar characteristics */
 .sidebar {
-  border: 5px solid purple;
+  /* border: 5px solid purple; */
+  border-right: 5px solid #c1b98b ;
   display: flex;
   flex: 1 1 10%;
   flex-direction: row;
@@ -74,11 +90,13 @@ li {
   justify-content: flex-end;
   padding: 20px;
   font-size: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 /* parent container to house the projects */
 .content {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   display: flex;
   flex: 1 1 90%;
   flex-direction: column;
